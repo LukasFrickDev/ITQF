@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>ITQF</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
+        <div class="container">
+            <h1>
+                <img class="navbar__logo" src="./img/logo.png" alt="">
+            </h1>
+            <!-- ---- nav hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- --------------------------- -->
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#courses">
+                            <i class="bi bi-house-door me-1"></i>
+                            Cursos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#about">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Quem Somos</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#blog">
+                            <i class="bi bi-card-text me-1"></i>
+                            Blog</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#contato">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Área do Aluno</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="banner">
+            <!-- ------------- CAROUSEL ---------------- -->
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./img/slides/slide3.png" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./img/slides/slide2.png" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./img/slides/slide1.png" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+        <section id="courses">
+            <!-- ------------- /CAROUSEL ---------------- -->
+            <!-- ------------- SEÇÃO CURSOS - v1 ---------------- -->
+            <div class="pt-5 pb-5" id="cursos-section">
+                <div class="container">
+                    <div class="courses">
+                        <h2 class="section-title"><span class="text-colored title">Todos os </span><span
+                                class="text-colored-light title">Cursos</span></h2>
+                    </div>
+                    <div class="courses__row">
+                        <div class="courses__row__container">
+                            <p class="courses__row__container__text-icon">
+                                <i class="bi bi-circle-fill me-1"></i>
+                                <span>Online e presencial</span>
+                            </p>
+                            <img src="./img/eventos/curso1.png"
+                                class="courses__row__container__img d-block rounded mb-3" alt="">
+                            <h3 class="courses__row__container__text section-title text-colored title--small p-2">
+                                Curso 1</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo qui laudantium debitis,
+                                dicta aperiam neque dolorem illum. Modi quis temporibus, iusto ex veniam, minima
+                                blanditiis animi, fugiat nemo dolorum quod.
+                            </p>
+                            <a class="button" href="">saiba mais</a>
+                        </div>
+                        <div class="courses__row__container">
+                            <p class="courses__row__container__text-icon">
+                                <i class="bi bi-circle-fill me-1"></i>
+                                <span>Online e presencial</span>
+                            </p>
+                            <img src="./img/eventos/curso2.png"
+                                class="courses__row__container__img d-block rounded mb-3" alt="">
+                            <h3 class="courses__row__container__text section-title text-colored title--small p-2">
+                                Curso 2</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo qui laudantium debitis,
+                                dicta aperiam neque dolorem illum. Modi quis temporibus, iusto ex veniam, minima
+                                blanditiis animi, fugiat nemo dolorum quod.
+                            </p>
+                            <a class="button" href="">saiba mais</a>
+                        </div>
+                        <div class="courses__row__container">
+                            <p class="courses__row__container__text-icon">
+                                <i class="bi bi-circle-fill me-1"></i>
+                                <span>Online e presencial</span>
+                            </p>
+                            <img src="./img/eventos/curso3.png"
+                                class="courses__row__container__img d-block rounded mb-3" alt="">
+                            <h3 class="courses__row__container__text section-title text-colored title--small p-2">
+                                Curso 3</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo qui laudantium debitis,
+                                dicta aperiam neque dolorem illum. Modi quis temporibus, iusto ex veniam, minima
+                                blanditiis animi, fugiat nemo dolorum quod.
+                            </p>
+                            <a class="button" href="">saiba mais</a>
+                        </div>
+
+                    </div>
+                    <a class="button button--section" href="">ver todos os cursos</a>
+                </div>
+            </div>
+            <!-- ------------- SEÇÃO CURSOS - v2 ---------------- -->
+            <div class="pt-5 pb-5" id="cursos-section">
+                <div class="container">
+                    <div class="courses">
+                        <h2 class="section-title title"><span class="text-colored">Todos os </span><span
+                                class="text-colored-light">Cursos</span></h2>
+                    </div>
+                    <div class="courses__row2">
+                        <div class="courses__row2__container">
+                            <p class="courses__row2__container__text-icon">
+                                <i class="bi bi-circle-fill me-1"></i>
+                                <span>Online e presencial</span>
+                            </p>
+                            <img src="./img/eventos/curso1.png"
+                                class="courses__row2__container__img d-block rounded mb-3" alt="">
+                            <h3 class="courses__row2__container__text section-title text-colored title--small p-2">
+                                Curso 1</h3>
+                            <p class="text--small">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo qui laudantium debitis,
+                                dicta aperiam neque dolorem illum. Modi quis temporibus, iusto ex veniam, minima
+                                blanditiis animi, fugiat nemo dolorum quod.
+                            </p>
+                            <a class="button" href="">saiba mais</a>
+                        </div>
+                        <div class="courses__row2__container">
+                            <p class="courses__row2__container__text-icon">
+                                <i class="bi bi-circle-fill me-1"></i>
+                                <span>Online e presencial</span>
+                            </p>
+                            <img src="./img/eventos/curso2.png"
+                                class="courses__row2__container__img d-block rounded mb-3" alt="">
+                            <h3 class="courses__row2__container__text section-title text-colored title--small p-2">
+                                Curso 2</h3>
+                            <p class="text--small">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo qui laudantium debitis,
+                                dicta aperiam neque dolorem illum. Modi quis temporibus, iusto ex veniam, minima
+                                blanditiis animi, fugiat nemo dolorum quod.
+                            </p>
+                            <a class="button" href="">saiba mais</a>
+                        </div>
+                        <div class="courses__row2__container">
+                            <p class="courses__row2__container__text-icon">
+                                <i class="bi bi-circle-fill me-1"></i>
+                                <span>Online e presencial</span>
+                            </p>
+                            <img src="./img/eventos/curso3.png"
+                                class="courses__row2__container__img d-block rounded mb-3" alt="">
+                            <h3 class="courses__row2__container__text section-title text-colored title--small p-2">
+                                Curso 3</h3>
+                            <p class="text--small">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo qui laudantium debitis,
+                                dicta aperiam neque dolorem illum. Modi quis temporibus, iusto ex veniam, minima
+                                blanditiis animi, fugiat nemo dolorum quod.
+                            </p>
+                            <a class="button" href="">saiba mais</a>
+                        </div>
+                        <div class="courses__row2__container">
+                            <p class="courses__row2__container__text-icon">
+                                <i class="bi bi-circle-fill me-1"></i>
+                                <span>Online e presencial</span>
+                            </p>
+                            <img src="./img/eventos/curso1.png"
+                                class="courses__row2__container__img d-block rounded mb-3" alt="">
+                            <h3 class="courses__row2__container__text section-title text-colored title--small p-2">
+                                Curso 4</h3>
+                            <p class="text--small">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo qui laudantium debitis,
+                                dicta aperiam neque dolorem illum. Modi quis temporibus, iusto ex veniam, minima
+                                blanditiis animi, fugiat nemo dolorum quod.
+                            </p>
+                            <a class="button" href="">saiba mais</a>
+                        </div>
+                    </div>
+                    <a class="button button--section" href="">ver todos os cursos</a>
+                </div>
+            </div>
+            <!-- ------------- SEÇÃO SOBRE TEXTUAL ---------------- -->
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__row">
+                    <div class=about__row__column">
+                        <img class=about__row__column__img src="./img/itqf.png" alt="Foto ITQF">
+                    </div>
+                    <div class="about__row__column">
+                        <h2 class="section-title title"><span class="text-colored">Sobre o </span><span
+                                class="text-colored-light">ITQF</span></h2>
+                        <p class="p">O Instituto de Tecnologia Química e Farmacêutica é uma instituição de ensino
+                            dedicada à capacitação profissional nas áreas química e farmacêutica. Nosso foco é oferecer
+                            cursos de alta qualidade, combinando conhecimento teórico atualizado com práticas
+                            laboratoriais avançadas, utilizando tecnologia de ponta.</p>
+                        <h3 class="text"><span class="text-colored">Missão</span></h3>
+                        <p class="p text--small">Capacitar profissionais nas áreas farmacêutica e química com cursos de
+                            excelência, através de difusão de conhecimento atualizado e prático, promovendo assim o
+                            avanço da indústria</p>
+                        <h3 class="text"><span class="text-colored">Visão</span></h3>
+                        <p class="p text--small">Ser reconhecido como referência em educação, aperfeiçamento e
+                            atualiazação profissionais farmacêuticos e químicos no Brasil</p>
+                        <h3 class="text"><span class="text-colored">Valores</span></h3>
+                        <p class="p text--small">Promover conhecimento de forma inovadora e dinâmica para assegurar a
+                            qualidade, segurança e eficácia dos medicamentos.</p>
+                    </div>
+                </div>
+                <div class="about__profissionals">
+                    <h3 class="section-title title"><span class="text-colored">Sobre </span><span
+                            class="text-colored-light title">os Profissionais</span></h3>
+
+                    <div class="profissionais-container">
+                        <!-- Profissional 1 -->
+                        <div class="profissional-item">
+                            <a class="shows__tabs__button" data-tab-button="profissional_01">
+                                <img class="about__profissionals__shows" src="./img/profissionais/profissional_01.png"
+                                    alt="">
+                                <p>MARCUS AUGUSTO LYRIO TRAPLE</p>
+                            </a>
+                            <ul class="shows__list" data-tab-id="profissional_01">
+                                <li class="shows__list__item">
+                                    <p>Farmacêutico - Bioquímico - USP </p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>Pós graduação - Gerenciamento de projetos - FGV</p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>MBA - Estratégia e liderança - IBE </p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>15 anos de atuação na área farmacêutica </p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>Especialista de pesquisa e desenvolvimento</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Profissional 2 -->
+                        <div class="profissional-item">
+                            <a class="shows__tabs__button" data-tab-button="profissional_02">
+                                <img class="about__profissionals__shows" src="./img/profissionais/profissional_02.png"
+                                    alt="">
+                                <p>FERNANDO PUGLIESI</p>
+                            </a>
+                            <ul class="shows__list" data-tab-id="profissional_02">
+                                <li class="shows__list__item">
+                                    <p>Químico – Centro Universitário Fundação Santo André </p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>Mestrado - Químicas Analítica – Cromatografia a gás - IPT</p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>17 anos de atuação sendo 7 na área farmacêutica </p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>Analista de pesquisa e desenvolvimento</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Profissional 3 -->
+                        <div class="profissional-item">
+                            <a class="shows__tabs__button" data-tab-button="profissional_03">
+                                <img class="about__profissionals__shows" src="./img/profissionais/profissional_03.png"
+                                    alt="">
+                                <p>PAULO VITOR BUENO TEDOKON</p>
+                            </a>
+                            <ul class="shows__list" data-tab-id="profissional_03">
+                                <li class="shows__list__item">
+                                    <p>Farmacêutico - Bioquímico - UNIFAL-MG</p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>Pós graduação - Análises Instrumentais avançadas - Faculdades Osvaldo Cruz</p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>Mestrado - Químicas Analítica - Espectroscopia Atômica - USP </p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>13 anos de atuação na área farmacêutica</p>
+                                </li>
+                                <li class="shows__list__item">
+                                    <p>Analista de pesquisa e desenvolvimento</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="soluctions">
+            <div class="container">
+                <div class="soluctions">
+                    <h2 class="section-title title">Nossa <span class="text-colored-light">Solução</span>
+                    </h2>
+                    <p class="text--big">Oferecemos cursos que aliam teoria sólida à prática avançada, criando uma
+                        experiência educacional completa que capacita profissionais para atender às crescentes demandas
+                        das indústrias química e farmacêutica.</p>
+                    <div class="soluctions__row">
+                        <div class="soluctions__row__container">
+                            <div class="soluctions__row__container__text-icon">
+                                <img src="https://img.icons8.com/ios/128/ffffff/paste.png" alt="paste">
+                                <p> Conteúdo Atualizado</p>
+                            </div>
+                            <div class="soluctions__row__container__text-icon">
+                                <img src="https://img.icons8.com/wired/128/ffffff/people-working-together.png"
+                                    alt="people-working-together">
+                                <p> Parceria Estratégica</p>
+                            </div>
+                            <div class="soluctions__row__container__text-icon">
+                                <img src="https://img.icons8.com/ios/128/ffffff/light-automation.png"
+                                    alt="light-automation" />
+                                <p> Metodologias Ativas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="pt-5 pb-5">
+            <div class="container">
+                <div class="blog row">
+                    <h2 class="section-title title mb-5"><span class="text-colored">Últimas </span><span
+                            class="text-colored-light">Novidades</span></h2>
+                </div>
+                <div class="blog row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column blog__nav ">
+                            <!-- por padrão o nav-pills vai deixar os itens um do lado do outro, ai com o flex-column deixa eles um abaixo do outro -->
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#principais-noticias"
+                                class="nav-link fw-bold text-start text-colored active">Principais Notícias</button>
+                            <!-- text-start faz com que o texto alinhe tudo inicialmente para a esquerda -->
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#quimica"
+                                class="nav-link fw-bold text-start text-colored">Química</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#farmaceutica"
+                                class="nav-link fw-bold text-start text-colored">Farmaceutica</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="principais-noticias">
+                                <div class="blog__row row">
+                                    <a class="blog__row__content" href="">
+                                        <img class="d-block w-100" src="./img/blog/img-quimic.png" alt="Coca">
+                                        <div class="blog__row__content__text">
+                                            <h5 class="text-colored fw-bold mt-2">Notícia 1 Quimica</h5>
+                                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </a>
+                                    <a class="blog__row__content">
+                                        <img class="d-block w-100" src="./img/blog/img-farmac.png" alt="suco">
+                                        <div class="blog__row__content__text">
+                                            <h5 class="text-colored fw-bold mt-2">Notícia 1 Farmaceutica</h5>
+                                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </a>
+                                    <a class="blog__row__content">
+                                        <img class="d-block w-100" src="./img/blog/img-saude.png" alt="suco">
+                                        <div class="blog__row__content__text">
+                                            <h5 class="text-colored fw-bold mt-2">Notícia 1 Geral</h5>
+                                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="button button--section" href="">ver todas as notícias</a>
+                            </div>
+                            <div class="tab-pane" id="quimica">
+                                <div class="blog__row row">
+                                    <a class="blog__row__content" href="">
+                                        <img class="d-block w-100" src="./img/blog/img-quimic.png" alt="Coca">
+                                        <div class="blog__row__content__text">
+                                            <h5 class="text-colored fw-bold mt-2">Notícia 1 Quimica</h5>
+                                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </a>
+                                    <a class="blog__row__content">
+                                        <img class="d-block w-100" src="./img/blog/img-saude.png" alt="suco">
+                                        <div class="blog__row__content__text">
+                                            <h5 class="text-colored fw-bold mt-2">Notícia 2 Quimica</h5>
+                                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </a>
+                                    <a class="blog__row__content">
+                                        <img class="d-block w-100" src="./img/blog/img-quimic.png" alt="suco">
+                                        <div class="blog__row__content__text">
+                                            <h5 class="text-colored fw-bold mt-2">Notícia 3 Quimica</h5>
+                                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="button button--section" href="">ver todas as notícias</a>
+                            </div>
+                            <div class="tab-pane" id="farmaceutica">
+                                <div class="blog__row row">
+                                    <a class="blog__row__content" href="">
+                                        <img class="d-block w-100" src="./img/blog/img-farmac.png" alt="Coca">
+                                        <div class="blog__row__content__text">
+                                            <h5 class="text-colored fw-bold mt-2">Notícia 1 Farmaceutica</h5>
+                                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </a>
+                                    <a class="blog__row__content">
+                                        <img class="d-block w-100" src="./img/blog/img1.png" alt="suco">
+                                        <div class="blog__row__content__text">
+                                            <h5 class="text-colored fw-bold mt-2">Notícia 2 Farmaceutica</h5>
+                                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </a>
+                                    <a class="blog__row__content">
+                                        <img class="d-block w-100" src="./img/blog/img-farmac.png" alt="suco">
+                                        <div class="blog__row__content__text">
+                                            <h5 class="text-colored fw-bold mt-2">Notícia </h5>
+                                            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="button button--section" href="">ver mais notícias</a>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="partners">
+            <div class="container">
+                <div class="row partners">
+                    <h2 class="section-title title mb-5">Parcerias</h2>
+                    <div class="col-md-3 partners__col"><img class="partners__col__img" src="./img/logo.png" alt="">
+                    </div>
+                    <div class="col-md-3 partners__col"><img class="partners__col__img" src="./img/logo.png" alt="">
+                    </div>
+                    <div class="col-md-3 partners__col"><img class="partners__col__img" src="./img/logo.png" alt="">
+                    </div>
+                    <div class="col-md-3 partners__col"><img class="partners__col__img" src="./img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="row partners partners__text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus iusto officiis sunt commodi in, molestias laboriosam. Dolorum obcaecati voluptate quis eos nostrum est, incidunt aperiam facilis odio suscipit fugit deserunt.</p>
+                </div>
+            </div>   
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center"><span class="text-colored">Fale </span><span
+                            class="text-colored-light">Conosco</span></h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-bold text-colored">Seu Nome</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu E-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="tel" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua Mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold button">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-md-3"> -->
+                        <div class="col-md-3 footer__col">
+                            <h3 class="fw-bold  fs-4">
+                                Redes Sociais
+                            </h3>
+                            <ul class="footer__col__ul social-links">
+                                <li class="footer__col__ul__list">
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="ms-3 me-3 footer__col__ul__list">
+                                    <a href="#">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__col__ul__list">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer__col">
+                            <h3 class="fw-bold fs-4">
+                                <i class=""></i>
+                                Site
+                            </h3>
+                            <ul class="footer__col__ul">
+                                <li>
+                                    <a class="nav-link" href="#courses">
+                                        <i class="me-1"></i>
+                                        Cursos</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#about">
+                                        <i class="me-1"></i>
+                                        Quem Somos</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#blog">
+                                        <i class="me-1"></i>
+                                        Blog</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#contato">
+                                        <i class="me-1"></i>
+                                        Fale Conosco</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="">
+                                        <i class="me-1"></i>
+                                        Área do Aluno</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer__col">
+                            <h3 class="fw-bold  fs-4">
+                                <i class="l"></i>
+                                Principais Cursos
+                            </h3>
+                            <ul class="footer__col__ul">
+                                <li>
+                                    <a class="nav-link" href="#courses">
+                                        <i class="me-1"></i>
+                                        Cursos 1</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#about">
+                                        <i class="me-1"></i>
+                                        Cursos 2</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#blog">
+                                        <i class="me-1"></i>
+                                        Cursos 3</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#contato">
+                                        <i class="me-1"></i>
+                                        Cursos 4</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="">
+                                        <i class="me-1"></i>
+                                        Todos os Cursos</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 footer__col">
+                            <h3 class="fw-bold  fs-4">
+                                <i class=""></i>
+                                Informações
+                            </h3>
+                            <ul class="footer__col__ul">
+                                <li>
+                                    <a class="nav-link fw-bold" href="#courses">
+                                        <i class="bi bi-house-door me-1"></i>
+                                        Contato</a>
+                                        <p class="footer__col__ul__p">(11) 9 5467-0986</p>                                </li>
+                                <li>
+                                    <a class="nav-link fw-bold" href="#about">
+                                        <i class="bi bi-house-door me-1"></i>
+                                        Endereço</a>
+                                        <p class="footer__col__ul__p">Rua Ficticia,445 - SP, 
+                                        </br>CEP - 09876-098</p>
+                                </li>
+                                <li>
+                                    <a class="nav-link fw-bold" href="#blog">
+                                        <i class="bi bi-card-text me-1"></i>
+                                        E-mail</a> 
+                                        <p class="footer__col__ul__p">contato@itqf.com.be</p>
+                                </li>
+                            </ul>
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="copyright">Copyright &copy 2025 ITQF – Instituto de Tecnologia Química e Farmacêutica. Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

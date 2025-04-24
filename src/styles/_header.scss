@@ -1,0 +1,32 @@
+@use 'config/variaveis.scss';
+
+.navbar {
+    background-color: variaveis.$corDeFundo;
+    color: #fff;
+
+    &__logo {
+        max-width: 80px;
+        width: 100%;
+
+        @media (max-width:768px) {
+            max-width: 64px;
+        }
+    }
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: variaveis.$corPrincipal;
+    color: variaveis.$corDeFundo;
+}
+
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: variaveis.$corPrincipal;
+}
+
+.navbar-toggler {
+    background-color: variaveis.$corDeFundo;
+}

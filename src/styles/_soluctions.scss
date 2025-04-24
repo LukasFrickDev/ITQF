@@ -1,0 +1,73 @@
+@use 'config/variaveis.scss';
+
+#soluctions {
+    background-color: variaveis.$corPrincipal;
+}
+
+.soluctions {
+    padding: 48px 0;
+    color: #fff;
+
+    .section-title {
+        color: #fff;
+        padding-bottom: 24px;
+    }
+
+    .text--big {
+        margin: 0 auto;
+        width: 85%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .soluctions {
+        &__row {
+            margin: 40px 0;
+
+            &__container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                &__text-icon {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    width: 30%;
+                    min-width: 180px;
+                    padding: 15px;
+                    box-sizing: border-box;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 768px) {
+        .soluctions__row__container__text-icon {
+            width: calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .soluctions__row__container__text-icon {
+            width: 100%;
+        }
+    }
+
+
+}

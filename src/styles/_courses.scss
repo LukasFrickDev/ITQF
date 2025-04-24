@@ -1,0 +1,82 @@
+@use 'config/variaveis.scss';
+
+.courses {
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        margin: 40px auto;
+
+        &__container {
+            background-color: #fff;
+            padding-top: 10px;
+            border-radius: 5px;
+            border: solid 2px variaveis.$corPrincipal ;
+            
+            &__text-icon {
+                font-size: 8px;
+                color: variaveis.$corSecundaria;
+                padding-bottom: 10px;
+                
+                span {
+                    font-size: 10px;
+                    color:variaveis.$corPrincipal;
+                }
+            }
+        
+            &__img,
+            &__text,
+            p {
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.container {
+
+    .button {
+        &--section{
+            margin-top: 60px;
+        }
+    }
+}
+
+// ----------------------v2-----------------------------
+
+.courses {
+    &__row2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        margin: 40px auto;
+
+        &__container {
+            background-color: #fff;
+            padding-top: 10px;
+            border-radius: 5px;
+            border: solid 2px variaveis.$corPrincipal ;
+            
+            &__text-icon {
+                font-size: 8px;
+                color: variaveis.$corSecundaria;
+                padding-bottom: 10px;
+                
+                span {
+                    font-size: 10px;
+                    color:variaveis.$corPrincipal;
+                }
+            }
+        
+            &__img,
+            &__text,
+            p {
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+/* o bootstrap já aplica o reset automaticamente */
+@use 'config/reset.scss';
+@use 'config/variaveis.scss';
+@use 'header.scss';
+@use 'hero.scss';
+@use 'courses.scss';
+@use 'about.scss';
+@use 'soluctions.scss';
+@use 'blog.scss';
+@use 'partner.scss';
+@use 'footer.scss';
+
+
+body {
+    font-family: variaveis.$fontePricipal;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+}
+
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+}
+
+.text--big {
+    @include text(18px);
+
+    @media (max-width:768px) {
+        @include text(15px)
+    }
+}
+
+.text {
+    @include text;
+
+    @media (max-width:768px) {
+        @include text(14px)
+    }
+    
+}
+
+.text--small {
+    @include text(12px);
+
+    @media (max-width:768px) {
+        @include text(11px)
+    }
+}
+
+.link-text {
+    @include text(18px);
+
+    text-decoration: underline;
+}
+
+.title--big {
+    @include title(44px);
+
+    @media (max-width:768px) {
+        @include title(26px)
+    }
+}
+
+.title {
+    @include title;
+
+    @media (max-width:768px) {
+        @include title(24px)
+    }
+
+}
+
+.title--small {
+    @include title(28px);
+
+    @media (max-width:768px) {
+        @include title(22px)
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: variaveis.$corPrincipal;
+    margin: 20px auto;
+    padding: 8px 14px ;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    text-decoration: none;
+    cursor: pointer;  
+    text-transform:uppercase ;
+    letter-spacing: 1px;
+    font-family: variaveis.$fonteSecundaria;
+    transition: .5s;
+
+    &:hover {
+        background-color: variaveis.$corSecundaria;
+    }
+
+    &--section {
+        background-color: transparent;
+        color: variaveis.$corPrincipal;
+        font-size: 18px;
+        padding: 20px 14px ;
+        border-radius: 25px;
+        border: 2px solid  variaveis.$corPrincipal ;
+        font-weight: bold;
+        max-width: 300px;
+        width: 100%;
+        transition: 1s;
+
+    
+        &:hover {
+            background-color: variaveis.$corPrincipal;
+            color: #fff;
+        }
+
+    }
+}
+
+.section-title {
+    font-family: variaveis.$fonteSecundaria;
+    font-weight: bold;
+    text-align: center;
+}
+
+#courses,
+#blog {
+    background-color: variaveis.$corDeFundoSecundaria;
+}
+
+
+
+
+.text-colored-light {
+    color: variaveis.$corSecundaria;
+}
+
+.text-colored {
+    color: variaveis.$corPrincipal;
+}
+
+
+
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+}

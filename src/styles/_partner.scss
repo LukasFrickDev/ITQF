@@ -1,0 +1,24 @@
+@use 'config/variaveis.scss';
+
+#partners {
+    background-color: variaveis.$corPrincipal;
+    padding: 40px 0;
+}
+.partners {
+    margin: 0 300px;
+    h2 {
+        color: #fff;
+    }
+    &__col {
+        &__img {
+            max-width: 200px;
+            width: 100%;
+            
+        }
+    }
+    &__text {
+        color: #fff;
+        padding-top:40px;
+        text-align: center;
+    }
+}
